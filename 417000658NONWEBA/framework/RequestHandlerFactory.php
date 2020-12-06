@@ -30,7 +30,9 @@ class RequestHandlerFactory implements RequestHandlerFactory_Interface{
         
         if (! class_exists($class)) {
        
-            throw new CommandNotFoundException("No Request Handler Class: '$class' Located");
+            //throw new CommandNotFoundException("No Request Handler Class: '$class' Located");
+            $parsedURL['query'] = "Index";
+            $class = "app\\handlers\\" . UCFirst(strtolower($parsedURL['query'])) . "Controller";
       
         }
        

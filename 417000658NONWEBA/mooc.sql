@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 12, 2020 at 12:37 AM
+-- Generation Time: Dec 06, 2020 at 09:12 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -262,8 +262,13 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`name`, `email`, `password`) VALUES
+('Eggs Benedict', 'bacon.lettuce@gmail.com', '$2y$10$wsiqTCSUlQT4kXDkVOHEIOYeqIHPqwSAPUIa.9P.ilfdpGqPJuBGq'),
+('Joseph Hewitt', 'bob.ross@gmail.com', '$2y$10$5U9vCB9C7GB9rahCJHMchuR/SqovT/KTOJ8/mUQcnY0VJ60gL.6We'),
 ('Bob Ross', 'bobross@gmail.com', '$2y$10$4F20R7HOJtSN7hn8qp6KzetiDpPiH4UCOW86zoqo9.s2H.8TIcrAq'),
 ('Chuck Norris', 'chuck.norris@gmail.com', '$2y$10$F2bZ8D/4bxqp6DpfM4xbNejy1D8yzkj2QFY9gfEVJ3f5F3RHmDbyK'),
+('Joseph Hewitt', 'eggs.benedict@outlook.com', '$2y$10$PeeNKeE4IJddDUdzLaeWV.FtUZBM2TkPAENSYlZZFTdw1FXsapFZ2'),
+('Joseph Hewitt', 'eggy.bendy@outlook.com', '$2y$10$TlE9RhFusat0msY366Lnde3ot3RfJEHZfajCsQR55xVj5RzwKFdJG'),
+('Joseph Hewitt', 'jim.bob@gmail.com', '$2y$10$IwJ28OV51NdThxX5bx2oouPeZNCyagmJMAdph7jQzuYscjLwLJTha'),
 ('Joseph Hewitt', 'joseph.hewitt@mycavehill.uwi.edu', '$2y$10$bejjLIOBz6XYdQ1/lhBnnO3Tr9N1ld7ZVEZwpm9bjUwDtWDJZGGqa'),
 ('Test User', 'tester@comp3170.com', '$2y$10$nJ8I5XDHu9DCfvntZTOuGeAdlETefY9r.RtJ/2b/jCgO5H82anM2C');
 
