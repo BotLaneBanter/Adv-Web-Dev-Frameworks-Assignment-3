@@ -1,0 +1,566 @@
+/* CSS for Course Assignment */
+
+/**********************************
+* Fonts for use with the site
+**********************************/
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: Enriqueta;
+	src: url("../fonts/Enriqueta-Regular.ttf");
+}
+/***********************************************
+* End of site fonts
+***********************************************/
+
+body {
+	background-color: white;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size:100%;
+}
+
+header {
+	background-image: url("../images/mooc_header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 325px;
+	clear: left;
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+	opacity: 0.9;
+	z-index: 1;
+}
+
+main {
+	width: 1078px;
+	background-color: #D1D1E0;
+	margin: auto;
+}
+
+section {
+	float: left;
+	width: 220px;
+	height: 187px;
+	margin-right: 25px;
+	margin-bottom: 7px;
+}
+
+footer {
+	clear: left;
+	width: 90%;
+	overflow: auto;
+	margin: auto;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid grey;
+	padding-top: 5px;
+}
+
+#lead-in {
+	position: absolute;
+	top: 60px;
+	left: 150px;
+	padding-top: 30px;
+	color: white;
+	max-width: 650px;
+	z-index: 999;
+	text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5), 0px 0px 32px rgba(0, 0, 0, 0.25), 0px 1px rgba(0, 0, 0, 0.75);
+	font-family: "Enriqueta",Times,serif;
+	font-size: 1.15em;
+}
+
+#streams-lead-in {
+	position: absolute;
+	top: 60px;
+	left: 400px;
+	padding-top: 30px;
+	color: white;
+	max-width: 650px;
+	z-index: 999;
+	text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5), 0px 0px 32px rgba(0, 0, 0, 0.25), 0px 1px rgba(0, 0, 0, 0.75);
+	font-family: "Enriqueta",Times,serif;
+	font-size: 1.15em;
+}
+
+#streams-lead-in h1 {
+	text-align: center;
+}
+
+#streams-header {
+	background-image: url("../images/streams_header.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 325px;
+	clear: left;
+	filter: brightness(90%);
+	-webkit-filter: brightness(90%);
+	opacity: 1;
+	z-index: 1;
+}
+
+.course-list div a.startnow-button {
+    padding: 8px 0px;
+    width: 100%;
+    color: #FFF;
+    background-color: #388438;
+    border-color: #1F6B1F;
+}
+
+.course-list div a.startnow-btn {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 6px;
+    font-size: 14px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -moz-user-select: none;
+}
+
+.course-list div a.unenroll-button {
+	margin-top: 10px;
+	background-color: #FF704D;
+	width: 100%;
+	color: #FFF;
+}
+
+.c-banner-search-input {
+    height: 40px;
+    width: 400px;
+    margin: 0px;
+    border: 0px none;
+    border-radius: 1px;
+    font-size: 17px;
+    padding: 5px 6px 5px 9px;
+    box-shadow: 0px 0px 0px 1px #555 inset, 0px 0px 0px 6px rgba(255, 255, 255, 0.5), 0px 0px 4px 6px rgba(0, 0, 0, 0.25);
+    color: #555;
+}
+
+.c-banner-search-button {
+    position: absolute;
+    top: 8px;
+    left: 370px;
+    height: 34px;
+    width: 40px;
+    border-width: medium medium medium 1px;
+    border-style: none none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #555;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    color: #000;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+ICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgsNzgpIj4gICAgICAgIDxnIHRyYW5zZm9ybT0ic2NhbGUoMC4wNSwtMC4wNSkiPiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMwMDAiIGQ9Ik0xMTUyIDcwNHEwIDE4NSAtMTMxLjUgMzE2LjV0LTMxNi41IDEzMS41dC0zMTYuNSAtMTMxLjV0LTEzMS41IC0zMTYuNXQxMzEuNSAtMzE2LjV0MzE2LjUgLTEzMS41dDMxNi41IDEzMS41dDEzMS41IDMxNi41ek0xNjY0IC0xMjhxMCAtNTIgLTM4IC05MHQtOTAgLTM4cS01NCAwIC05MCAzOGwtMzQzIDM0MnEtMTc5IC0xMjQgLTM5OSAtMTI0cS0xNDMgMCAtMjczLjUgNTUuNXQtMjI1IDE1MHQtMTUwIDIyNXQtNTUuNSAyNzMuNSB0NTUuNSAyNzMuNXQxNTAgMjI1dDIyNSAxNTB0MjczLjUgNTUuNXQyNzMuNSAtNTUuNXQyMjUgLTE1MHQxNTAgLTIyNXQ1NS41IC0yNzMuNXEwIC0yMjAgLTEyNCAtMzk5bDM0MyAtMzQzcTM3IC0zNyAzNyAtOTB6IiAvPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+") no-repeat scroll 50% 50% / 16px 16px transparent;
+}
+
+.course-title {
+	font-size: 1.1em;
+	color: #FF0066;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 3px;
+}
+
+.padded {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.wide-thick-bordered {
+	width: 300px;
+	height: 25px;
+	margin: 0px;
+	display: inline-block;
+	position: relative;
+}
+
+body > nav ul {
+	list-style-type: none;
+	margin: 0px 0px 0px 690px;
+	padding: 20px 0px 40px;
+	text-align: center;
+}
+
+body > nav ul li {
+	float: left;
+	overflow: auto;
+	margin-right: 50px;
+}
+
+body > nav ul li a {
+	display: block;
+	font-family: "Open Sans", Verdana serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	color: grey;
+}
+
+body > nav img {
+	position: absolute;
+	top: 18px;
+	left: 180px;
+}
+
+body > main > ul {
+	list-style-type: none;
+	padding: 20px 0px 20px;
+	margin-left: 30px;
+}
+
+body > main > ul li {
+	width: 90%;
+	border-top: thin solid grey;
+	padding: 10px;
+}
+
+main h1 {
+	text-align: center;
+	font-family: "Open Sans";
+	font-weight: normal;
+	padding-top: 30px;
+	clear: both;
+	}
+	
+main h2 {
+	margin: 0px 0px 0px 30px;
+}
+	
+main.streams {
+	margin-top: 30px;
+}
+	
+section.streams {
+	float: left;
+	width: 224px;
+	height: 324px;
+	margin-top: 15px;
+	margin-right: 20px;
+	margin-bottom: 7px;
+	border: thin dotted black;
+}
+
+section img {
+	width: 220px;
+	height: 124px;
+	border: thin dotted black;
+}
+
+section.streams img {
+	width: 224px;
+	height: 224px;
+	border: none;
+}
+
+section a {
+	text-decoration: none;
+	font-size: 0.8em;
+	color: black;
+}
+
+footer nav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding-bottom: 40px;
+}
+
+footer nav ul li {
+	float: left;
+	width: 25%;
+}
+
+footer nav ul li a {
+	display: block;
+	font-family: "Open Sans", Verdana, serif;
+	text-decoration: none;
+	color: black;
+}
+
+footer nav ul li a:hover {
+	color: red;
+	font-weight: bold;
+}
+
+ul.course-list li {
+	overflow: auto;
+	width: 990px;
+}
+
+#unenroll-confirm {
+	margin-left: 55px;
+	}
+
+ul.course-list div:first-child {
+	float:left;
+	width: 180px;
+}
+
+ul.course-list div {
+	float:left;
+	width: 600px;
+	height: 102px;
+}
+
+ul.course-list div:last-child {
+	float: left;
+	width: 158px;
+	height: 102px;
+}
+
+ul.course-list a {
+	text-decoration: none;
+	color: black;
+}
+
+ul.course-list span {
+	float:left;
+	margin-left: 5px;
+	width:55%;
+	font-family: "Open Sans", Verdana, serif;
+}
+
+ul.course-list img {
+	height: 102px;
+	width: 180px;
+}
+
+span.course-title {
+	color: #FF0066;
+	font-weight: bold;
+	display: block;
+}
+
+div.centered {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	width: 90%;
+	overflow: auto;
+	}
+	
+div section:last-child {
+	margin-right: 0px;
+}
+
+/************************************
+* Styles from AdminLTE login page
+*************************************/
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    line-height: normal;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0px;
+    font: inherit;
+    color: inherit;
+}
+
+a:hover, a:active, a:focus {
+    outline: medium none;
+    text-decoration: none;
+    color: #72AFD2;
+}
+a:focus {
+    outline: thin dotted;
+    outline-offset: -2px;
+}
+a:hover, a:focus {
+    color: #23527C;
+    text-decoration: underline;
+}
+a {
+    color: #3C8DBC;
+}
+a {
+    color: #337AB7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.login-box-body, .register-box-body {
+    background: none repeat scroll 0% 0% #FFF;
+    padding: 40px;
+    border-top: 0px none;
+    color: #666;
+}
+
+.login-box-msg, .register-box-msg {
+    margin: 0px;
+    text-align: center;
+    padding: 0px 20px 20px;
+}
+
+.social-auth-links {
+    margin: 10px 0px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.has-feedback {
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.radio, .checkbox {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-radius: 0px !important;
+    -moz-appearance: none;
+    box-shadow: none;
+    border-color: #D2D6DE;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.login-box-body .form-control-feedback, .register-box-body .form-control-feedback {
+    color: #777;
+}
+
+.form-control-feedback {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.col-xs-8 {
+    width: 66.6667%;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.icheckbox_square-blue {
+    background-position: 0px 0px;
+}
+.icheckbox_square-blue, .iradio_square-blue {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+    width: 22px;
+    height: 22px;
+    background: url("blue.png") no-repeat scroll 0% 0% transparent;
+    border: medium none;
+    cursor: pointer;
+}
+
+.btn.btn-flat {
+    border-radius: 0px;
+    box-shadow: none;
+    border-width: 1px;
+}
+.btn-primary {
+    background-color: #3C8DBC;
+    border-color: #367FA9;
+}
+.btn {
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-primary {
+    color: #FFF;
+    background-color: #337AB7;
+    border-color: #2E6DA4;
+}
+.btn {
+    display: inline-block;
+    padding: 3px 3px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.login-box, .register-box {
+    width: 400px;
+	padding: 10px;
+    margin: auto;
+	overflow: auto;
+}
+
+.login-page, .register-page {
+    background: none repeat scroll 0% 0% #D2D6DE;
+}

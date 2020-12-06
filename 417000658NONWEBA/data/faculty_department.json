@@ -1,0 +1,10 @@
+{
+"faculty_department" : {
+	"1" : "Department of Computer Science",
+	"2" : "Biology Department",
+	"3" : "Department of Electronics",
+	"4" : "Department of Mathematics",
+	"5" : "Department of Physics",
+	"6" : "Department of Chemistry"
+ }
+}

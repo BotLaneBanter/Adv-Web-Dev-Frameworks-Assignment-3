@@ -1,0 +1,100 @@
+{
+	"courses": {
+		"1": ["Introduction to Data Structures",
+			"Computers can store and process vast amounts of data. Formal data structures enable a programmer to mentally structure large amounts of data into conceptually manageable relationships.",
+			25,
+			100,
+			"datastructures.jpg"
+		],
+		"2": ["Compiler Theory",
+			"Compiler construction is an area of computer science that deals with the theory and practice of developing programming languages and their associated compilers.",
+			43,
+			543,
+			"compiler.png"
+		],
+		"3": ["Software Engineering",
+			"Software engineering is the study and an application of engineering to the design, development, and maintenance of software.",
+			57,
+			435,
+			"software.jpg"
+		],
+		"4": ["Molecular Biochemistry",
+			"The study of the molecular mechanisms by which genetic information encoded in DNA is able to result in the processes of life.",
+			322,
+			356,
+			"molecular.jpg"
+		],
+		"5": ["Introduction to Renewable Energy",
+			"Introduction to Renewable Energy (RE100) is an online course for those who wish to learn the basics of renewable energy – including where it is found, how we can harvest it for use in our homes, and how it can help ease pressures on the environment.",
+			876,
+			6334,
+			"renewable.jpg"
+		],
+		"6": ["Marine Biology",
+			"The scientific study of organisms in the ocean or other marine or brackish bodies of water. Given that in biology many phyla, families and genera have some species that live in the sea and others that live on land, marine biology classifies species based on the environment rather than on taxonomy.",
+			42,
+			974,
+			"marine.jpg"
+		],
+		"7": ["Introduction to Astronomy",
+			"Introduction to Astronomy provides a quantitative introduction to the physics of the solar system, stars, the interstellar medium, the galaxy, and the universe, as determined from a variety of astronomical observations and models.",
+			342,
+			6367,
+			"astronomy.jpg"
+		],
+		"8": ["Robotics",
+			"Robotics is the branch of mechanical engineering, electrical engineering and computer science that deals with the design, construction, operation, and application of robots, as well as computer systems for their control, sensory feedback, and information processing.",
+			12,
+			342,
+			"robotics.jpg"
+		],
+		"9": ["Artificial Intelligence",
+			"Artificial intelligence (AI) is the intelligence exhibited by machines or software. It is an academic field of study which studies the goal of creating intelligence. Major AI researchers and textbooks define this field as 'the study and design of intelligent agents.'",
+			32767,
+			312,
+			"ai.jpg"
+		],
+		"10": ["Networks & Security",
+			"Network security consists of the provisions and policies adopted by a network administrator to prevent and monitor unauthorized access, misuse, modification, or denial of a computer network and network-accessible resources.",
+			73455,
+			244,
+			"networksecurity.jpg"
+		],
+		"11": ["Biochemistry of Human Disease",
+			"Specifically designed for upper-division undergraduate or graduate students in life science or pre-medical majors including dentistry or pharmacology, who are required to take a biochemistry or medical biochemistry course.",
+			6980,
+			634,
+			"humandisease.jpg"
+		],
+		"12": ["Introduction to Genetics",
+			"",
+			45678,
+			324,
+			"genetics.jpg"
+		],
+		"13": ["Basic Mathematics",
+			"Introduces basic algebraic, geometric, and two dimensional graphing techniques and applications. The course is designed primarily for students in specific vocational or technical programs.",
+			3452,
+			776,
+			"mathematics.jpg"
+		],
+		"14": ["Introduction to Electronics",
+			"Getting started with basic electronics is easier than you might think. This course will demystify the basics of electronics so that anyone with an interest in building circuits can hit the ground running.",
+			54334,
+			5443,
+			"electronics.jpg"
+		],
+		"15": ["Object-Oriented Programming",
+			"Object-oriented programming (OOP) is a programming paradigm based on the concept of 'objects', which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods",
+			45443,
+			4657,
+			"oop.jpg"
+		],
+		"16": ["Computational Physics",
+			"Computational physics is the study and implementation of numerical analysis to solve problems in physics for which a quantitative theory already exists.",
+			67664,
+			423,
+			"physics.jpg"
+		]
+	}
+}
