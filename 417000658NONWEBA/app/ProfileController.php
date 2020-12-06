@@ -14,7 +14,7 @@ class ProfileController extends PageController_Command_Abstract{
     private $objectData = null;
 
 public function run(){
-
+    
     //Start a new session and check if the user can be on this page
     $registry = Registry::getInstance();
     $session = $registry->getSession();

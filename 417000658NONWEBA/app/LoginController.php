@@ -10,7 +10,6 @@ use QuwisSystem\Framework\ResponseHandler;
 use QuwisSystem\Framework\ResponseHeader;
 use QuwisSystem\Framework\ResponseState;
 use QuwisSystem\Framework\ResponseLogger;
-use QuwisSystem\Framework\FrontController;
 use QuwisSystem\Framework\Registry;
 use QuwisSystem\Framework\LSUMapper;
 use QuwisSystem\Framework\LSUData;
@@ -86,6 +85,8 @@ class LoginController extends PageController_Command_Abstract{
 
                     //Get ResponseHandler
                     $responseHandler = ResponseHandler::getInstance();
+                    $responseHandler->storeErrorLogs();
+                    $responseHandler->storeHeaders();
                     $state = $responseHandler->giveState();
 
                     //Make array with Profile in it

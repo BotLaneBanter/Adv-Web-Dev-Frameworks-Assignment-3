@@ -6,6 +6,10 @@ use QuwisSystem\Framework\Validator;
 use QuwisSystem\Framework\View;
 use QuwisSystem\Framework\CommandContext;
 use QuwisSystem\Framework\Registry;
+use QuwisSystem\Framework\ResponseHandler;
+use QuwisSystem\Framework\ResponseHeader;
+use QuwisSystem\Framework\ResponseState;
+use QuwisSystem\Framework\ResponseLogger;
 use SignupModel;
 
 class SignupController extends PageController_Command_Abstract{
@@ -112,6 +116,11 @@ class SignupController extends PageController_Command_Abstract{
                 }
                     
                 if($errorExists == true){
+
+                    $responseHandler = ResponseHandler::getInstance();
+                    $responseHandler->storeErrorLogs();
+                    $responseHandler->storeHeaders();
+
                     //Tell the model to update the data which changed
                     $this->observableModel->updateChangedData($data);  
                         

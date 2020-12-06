@@ -38,6 +38,7 @@ class Registry{
 
     public function getPDO() : \PDO{
 
+        //Usernasme and password of DB server
         $user = "root";
         $pass = "";
 

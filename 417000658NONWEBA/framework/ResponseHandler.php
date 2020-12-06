@@ -4,10 +4,10 @@ namespace QuwisSystem\Framework;
 
 class ResponseHandler implements ResponseHandler_Interface{
 
+    private static $uniqueInstance = null;
     protected $Header = null;
     protected $State = null;
     protected $Logger = null;
-    private static $uniqueInstance;
 
     private function __construct(ResponseHeader $header, ResponseState $state, ResponseLogger $logger){
 
@@ -48,6 +48,23 @@ class ResponseHandler implements ResponseHandler_Interface{
     public function giveLogger() : ResponseLogger{
 
         return clone $this->Logger;
+
+    }
+
+    //Error Logging
+    public function storeErrorLogs(){
+
+        if(isset($php_errormsg)){
+            $this->Logger->addEntries(['phperror' => ['Log' => $php_errormsg, 'Time' => time()]]);
+        }
+
+    }
+
+    public function storeHeaders(){
+
+        $this->Header->addEntries([$_SERVER['SERVER_NAME']]);
+        $this->Header->addEntries([$_SERVER['SERVER_SOFTWARE']]);
+        $this->Header->addEntries([$_SERVER['SCRIPT_FILENAME']]);
 
     }
 
