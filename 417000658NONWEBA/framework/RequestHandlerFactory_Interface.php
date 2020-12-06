@@ -4,7 +4,7 @@ namespace QuwisSystem\Framework;
 
 interface RequestHandlerFactory_Interface{
 
-    public static function makeRequestHandler(string $request='Index') : PageController_Command_Abstract;
+    public static function makeRequestHandler() : PageController_Command_Abstract;
 
 }
 

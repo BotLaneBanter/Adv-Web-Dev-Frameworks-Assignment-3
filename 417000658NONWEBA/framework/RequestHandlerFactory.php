@@ -5,19 +5,28 @@ namespace QuwisSystem\Framework;
 class RequestHandlerFactory implements RequestHandlerFactory_Interface{
 
     //CHANGE INDEX BACK TO DEFAULT LATER (ONLY CHANGED TO TEST IF IT WORKS)
-    public static function makeRequestHandler(string $request = 'Index'): PageController_Command_Abstract
+    public static function makeRequestHandler(): PageController_Command_Abstract
     {
-        if (preg_match('/\W/', $request)) {
+
+        //Parse the url, breaking it down into two parts
+        $parsedURL = parse_url($_SERVER['REQUEST_URI']);
+
+        //Check if the query is valid
+        //If not, give it a default value of index
+        if(!isset($parsedURL['query'])){
+
+            $parsedURL['query'] = "Index";
+
+        }
+
+
+        if (preg_match('/\W/', $parsedURL['query'])) {
 
         throw new Exception("Illegal Characters In Action");
 
         }
-
-        if(empty($request)){
-            $request = "Index";
-        }
        
-        $class = "app\\handlers\\" . UCFirst(strtolower($request)) . "Controller";
+        $class = "app\\handlers\\" . UCFirst(strtolower($parsedURL['query'])) . "Controller";
         
         if (! class_exists($class)) {
        

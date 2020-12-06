@@ -107,7 +107,7 @@ class SignupController extends PageController_Command_Abstract{
                     $this->observableModel->notify();
 
                     //Set post as profile for requestHandler
-                    header("Location: index.php?controller=Login");
+                    header("Location: index.php?Login");
 
                 }
                     

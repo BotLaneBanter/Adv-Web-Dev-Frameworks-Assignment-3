@@ -9,10 +9,10 @@
 		<nav>
 			<a href="#"><img src="images/logo.png" alt="UWI online"></a>
 			<ul>
-				<li><a href="index.php?controller=Courses">Courses</a></li>
-				<li><a href="index.php?controller=Streams">Streams</a></li>
-				<li><a href="index.php?controller=AboutUs">About Us</a></li>
-				<li><a href="index.php?controller=SignUp">Sign Up</a></li>
+				<li><a href="index.php?Courses">Courses</a></li>
+				<li><a href="index.php?Streams">Streams</a></li>
+				<li><a href="index.php?AboutUs">About Us</a></li>
+				<li><a href="index.php?SignUp">Sign Up</a></li>
 			</ul>
 		</nav>
 		<main>

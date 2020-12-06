@@ -76,7 +76,7 @@ class LoginController extends PageController_Command_Abstract{
                      $session->add("Email", $userPOSTData['email']);
 
                     //Set post as profile for requestHandler
-                    header("Location: index.php?controller=Profile");
+                    header("Location: index.php?Profile");
                     
                 }
                 else{

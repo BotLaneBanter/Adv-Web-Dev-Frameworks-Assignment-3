@@ -31,16 +31,16 @@ class FrontController extends FrontController_Abstract{
         $context = new CommandContext();
 
         //Get the $_GET data from CommandContext
-        $request = ""; 
+        /*$request = ""; 
         $get = $context->get('get');
         
 
         if(!empty($get)){
             $request = $get['controller'];
-        }
+        }*/
 
 
-        $handler = RequestHandlerFactory::makeRequestHandler($request);
+        $handler = RequestHandlerFactory::makeRequestHandler();
 
             if($handler->execute($context) === false){
                 //Do some error handling
